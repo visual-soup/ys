@@ -1,0 +1,55 @@
+@font-face {
+    src: url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+    font-family: mono-space;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+    padding: 0; 
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    font-size: 14px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    flex-wrap: wrap;
+}
+#main div {
+    display: flex; 
+    gap: .75em;
+}
+
+a {
+    display: block;
+    width: min-content;
+    color: black;
+    font-size: 1.5rem;
+    transition: opacity .125s ease-in;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+i.fa-paper-plane { font-size: 1.25rem;}
+
+
+img { 
+    max-width: 180px;
+    width: 100%;
+    width: clamp(120px, 100%, 180px);
+    padding: 0 2%;
+}
+
